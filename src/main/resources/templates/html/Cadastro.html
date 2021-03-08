@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CADASTRE-SE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"
+	charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/styleCadastro.css">
+
+</head>
+<body>
+	<div class="login-container">
+		<form method="post" action="/saveUsuario">
+
+
+			<h2>Cadastre-se para acessar</h2>
+			<div class="input-div one">
+				<div class="i">
+					<i class="fas fa-user"></i>
+				</div>
+				<div>
+					<h5>Digite ou fale seu CPF</h5>
+					<input class="input" type="text" name="cpf"
+						pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"><i
+						class="fas fa-microphone fa-pull-right"></i>
+				</div>
+			</div>
+			<div class="input-div two">
+				<div class="i">
+					<i class="fal fa-address-card"></i>
+				</div>
+				<div>
+					<h5>Digite ou fale seu nome completo</h5>
+					<input class="input" type="text" name="nome" min="1" max="255"><i
+						class="fas fa-microphone fa-pull-right"></i>
+				</div>
+			</div>
+			<div class="input-div three">
+				<div class="i">
+					<i class="fal fa-envelope"></i>
+				</div>
+				<div>
+					<h5>Digite ou fale seu e-mail</h5>
+					<input class="input" type="text" name="email" min="5" max="254"
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><i
+						class="fas fa-microphone fa-pull-right"></i>
+				</div>
+			</div>
+			<div class="input-div four">
+				<div class="i">
+					<i class="fas fa-calendar"></i>
+				</div>
+				<div>
+					<h5>Digite ou fale sua idade</h5>
+					<input class="input" type="number" name="idade" min="1" max="110"
+						title="Digite uma idade válida"><i
+						class="fas fa-microphone fa-pull-right"></i>
+				</div>
+			</div>
+			<div class="input-div five">
+				<div class="i">
+					<i class="fas fa-user-lock"></i>
+				</div>
+				<div>
+					<h5>Digite ou fale sua senha</h5>
+					<input class="input" type="password" name="senha"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						title="
+Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 8 ou mais caracteres "><i
+						class="fas fa-microphone fa-pull-right"></i>
+				</div>
+			</div>
+			<div class="title">
+				<a href="/Login" class="a">JÃ¡ sou Cadastrado</a>
+				<div class="form-group">
+					<div class="col-sm-offset-6 col-sm-10">
+						<button type="submit" class="btn btn-success btn-block ">Cadastrar</button>
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+</body>
+</html>
